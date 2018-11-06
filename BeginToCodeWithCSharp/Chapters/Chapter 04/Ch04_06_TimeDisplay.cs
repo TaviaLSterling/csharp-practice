@@ -7,6 +7,11 @@ class Ch04_06_TimeDisplay
         SnapsEngine.SetTitleString("Current Time");
         int hourValue = SnapsEngine.GetHourValue();
         int minuteValue = SnapsEngine.GetMinuteValue();
-        SnapsEngine.DisplayString(hourValue + ":" + minuteValue);
+        bool ItIsTimeToGetUp = hourValue > 6;
+        SnapsEngine.SetDisplayStringSize(20);
+        if(ItIsTimeToGetUp)
+        SnapsEngine.DisplayString("The time is " + hourValue + ":" + minuteValue);
+        SnapsEngine.Delay(4);
+        SnapsEngine.DisplayString("It is time to get up");
     }
 }
