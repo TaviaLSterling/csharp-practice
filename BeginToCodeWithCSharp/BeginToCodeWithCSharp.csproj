@@ -247,6 +247,7 @@
     </Compile>
     <Compile Include="My Snaps apps\Countdown.cs" />
     <Compile Include="My Snaps apps\ExerciseTimer.cs" />
+    <Compile Include="My Snaps apps\SpeakTheDay.cs" />
     <Compile Include="My Snaps apps\MyProgram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
