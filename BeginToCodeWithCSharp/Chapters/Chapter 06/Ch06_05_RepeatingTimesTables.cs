@@ -8,13 +8,14 @@ class Ch06_05_RepeatingTimesTables
         
         while (true)
         {
+          //  SnapsEngine.ClearScreenTappedFlag();
             int newValue;
             int count = 1;
             string timesValue = SnapsEngine.ReadString("Pick a number");
             newValue = int.Parse(timesValue);
 
             while (count < 13)
-            {
+            {  
                 int result = count * newValue;
 
                 string message = count.ToString() +
@@ -23,7 +24,10 @@ class Ch06_05_RepeatingTimesTables
 
                 SnapsEngine.DisplayString(message);
                 SnapsEngine.SpeakString(message);
+              //  if (SnapsEngine.ScreenHasBeenTapped())
+              //      break;
                 count = count + 1;
+             
             }
             SnapsEngine.WaitForButton("Press to continue");
         }
