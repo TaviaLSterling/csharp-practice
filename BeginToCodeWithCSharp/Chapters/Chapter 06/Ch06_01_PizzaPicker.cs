@@ -4,7 +4,10 @@ class Ch06_01_PizzaPicker
 {
     public void StartProgram()
     {
+        SnapsEngine.SetTitleColor(red:255, green:255, blue:255);
+        
         SnapsEngine.SetTitleString("Select Pizza");
+        SnapsEngine.DisplayBackground(imageURL: "https://images7.alphacoders.com/429/thumb-1920-429071.jpg");
 
         int cheeseAndTomatoCount = 0;
         int pepperoniCount = 0;
