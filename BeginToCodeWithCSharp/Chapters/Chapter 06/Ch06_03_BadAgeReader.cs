@@ -9,7 +9,7 @@ class Ch06_03_BadAgeReader
         do
         {
             age = SnapsEngine.ReadInteger("Enter your age");
-        } while (age < 1 & age > 100);
+        } while (age > 1 & age < 100);
         SnapsEngine.DisplayString("Thank you for entering your age of " + age);
     }
 }

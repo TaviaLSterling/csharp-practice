@@ -5,18 +5,20 @@ class Ch06_05_RepeatingTimesTables
     public void StartProgram()
     {
         SnapsEngine.SetTitleString("Talking Times Tables");
-
+        
         while (true)
         {
+            int newValue;
             int count = 1;
-            int timesValue = 2;
+            string timesValue = SnapsEngine.ReadString("Pick a number");
+            newValue = int.Parse(timesValue);
 
             while (count < 13)
             {
-                int result = count * timesValue;
+                int result = count * newValue;
 
                 string message = count.ToString() +
-                    " times " + timesValue.ToString() +
+                    " times " + newValue.ToString() +
                     " is " + result.ToString();
 
                 SnapsEngine.DisplayString(message);
