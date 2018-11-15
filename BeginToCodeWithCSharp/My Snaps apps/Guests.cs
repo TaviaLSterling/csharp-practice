@@ -9,13 +9,14 @@ class Guests
         // Find out how many sales values are being stored
         int noOfGuests = SnapsEngine.ReadInteger("How many guests will there be?");
         int[] guests = new int[noOfGuests];
-
+        string nameOfGuests = SnapsEngine.ReadString("Enter the name for each guest");
+        string[] guestNames = new string[nameOfGuests];
         // Loop round and read the sales values
         for (int count = 0; count < guests.Length; count = count + 1)
         {
             // User likes to count from 1, not zero
             int displayCount = count + 1;
-            guests[count] = SnapsEngine.ReadString("Enter the name for guest " + displayCount);
+            guestNames[count] = SnapsEngine.ReadString("Enter the name for guest " + displayCount);
         }
 
         // Got the sales figures, now display them
